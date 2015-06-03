@@ -1,0 +1,70 @@
+!Tex Program = xelatex
+
+\documentclass[oneside,12pt,letterpaper]{article} % A4 paper and 11pt font size
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[margin=1.3in]{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{fontspec,xltxtra,xunicode}
+%\usepackage{lmodern}
+\usepackage[american]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[doublespacing]{setspace}
+\usepackage{xspace}
+\usepackage[comma,authoryear]{natbib}
+\usepackage{titling}
+\usepackage[bottom,flushmargin]{footmisc}
+\usepackage[hidelinks]{hyperref}
+
+
+\title{SNAPPY TITLE: \\ \vspace{-5pt} {\huge WITTY SUBTITLE}}
+\author{\href{mailto:dneuman@berkeley.edu}{Dustin Neuman}{\thanks{For CLASS AND PROFESSOR}}}
+\date{{\small Philosophy Department, U.C. Berkeley}}
+
+
+\pretitle{\begin{flushleft}\vspace{5mm}\Huge\sffamily\upshape} % makes document title flush left
+	\posttitle{\end{flushleft}}
+\preauthor{\begin{flushleft}\Large\sffamily\vspace{-8pt}} % makes author flush left
+	\postauthor{\end{flushleft}}
+\predate{\begin{flushleft}\large\sffamily\vspace{-15pt}} % makes date title flush left
+	\postdate{\end{flushleft}}
+
+\setlength{\droptitle}{-90pt}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Minion Pro}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Myriad Pro}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+%\usepackage[activate={true,nocompatibility},
+%			final,
+%			tracking=true,
+%			kerning=true,
+%			spacing=true,
+%			factor=1100,
+%			stretch=10,
+%			shrink=10]
+%			{microtype}
+
+\begin{document}
+
+\begin{singlespacing}
+\maketitle
+\end{singlespacing}
+
+\frenchspacing
+
+%% DOCUMENT START %%
+
+
+%% DOCUMENT END %%
+%%% BIBLIOGRAPHY STARTS HERE
+\pagebreak[1]
+\begin{raggedright}
+  \bibliographystyle{plainnat} \thispagestyle{empty}
+  \bibliography{} %% ADD BIBLIOGRAPHY NAME HERE (NO ``.bib'')
+\end{raggedright}
+
+\end{document}
+
+
